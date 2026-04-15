@@ -1,5 +1,5 @@
 # final-project
-Bart Snake Game Description: Its the google snake game however, instead of a sanke its a bart train and instead of apples its clipper cards. 
+Bart Snake Game Description: It's the Google Snake game; however, instead of a sanke its a bart train, and instead of apples it's Clipper cards. 
 
 Features: As for the features its reltively the same. Counter variable to count how many Clipper cards are eaten, the length of the Bart line, and the Clipper card objects. As well as Boss objects for the final boss towards the end of the game. 
 
@@ -8,3 +8,4 @@ We first will build the Snake Bart game, while prioritizing the Bart Snake, maki
 Then a seperate part of the game is using Godot with C++. This will have its own game design features with the Bart, map theme, and final boss/clipper cards. 
 
 All in all its a hefty project yet challenging and fun. 
+
