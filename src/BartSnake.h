@@ -27,3 +27,4 @@ public:
     int getLength() const;
 };
 
+#endif
