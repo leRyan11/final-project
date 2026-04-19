@@ -1,11 +1,15 @@
-# final-project
+# Bart-Snake
 Bart Snake Game Description: It's the Google Snake game; however, instead of a sanke its a bart train, and instead of apples it's Clipper cards. 
 
-Features: As for the features its reltively the same. Counter variable to count how many Clipper cards are eaten, the length of the Bart line, and the Clipper card objects. As well as Boss objects for the final boss towards the end of the game. 
+Features: 
+- Move the Bart snake using keyboard controls
+- Collect Clipper cards to increase score and snake length
+- Play through different BART station-themed maps
+- Detect collisions with walls and the snake itself
+- Trigger checkpoint or boss encounters during gameplay
+- Save and load the high score from a text file
 
-We first will build the Snake Bart game, while prioritizing the Bart Snake, making sure we have the correct borders and clipper card objects. The score and length features work smoothly. Then after we take care of the regular snake game, we would then handle the final boss at the end of the game. Making sure it doesn't break any of the regular game features. Again listed in the previous doc, this is a so-so it all depends if it makes or breaks the game. 
-
-Then a seperate part of the game is using Godot with C++. This will have its own game design features with the Bart, map theme, and final boss/clipper cards. 
-
-All in all its a hefty project yet challenging and fun. 
-
+- ## Building
+```bash
+cmake -S . -B build
+cmake --build build
