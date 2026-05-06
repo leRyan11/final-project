@@ -10,9 +10,14 @@ int ClipperCard::getX() const {
     return x;
 }
 
+
 int ClipperCard::getY() const {
     return y;
 }
+
+int ClipperCard::getY() const { 
+    return y; 
+} 
 
 void ClipperCard::setPosition(int newX, int newY) {
     x = newX;
