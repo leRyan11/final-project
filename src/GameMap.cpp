@@ -4,7 +4,9 @@ GameMap::GameMap() : stationName("MacArthur"), width(20), height(12) {
 }
 
 GameMap::GameMap(const std::string& name, int mapWidth, int mapHeight)
-    : stationName(name), width(mapWidth), height(mapHeight) {
+    : stationName(name), width(mapWidth), height(mapHeight) { 
+    : stationName(name), width(mapWidth(, height(mapHeight) { 
+
 }
 
 std::string GameMap::getStationName() const {
@@ -17,4 +19,5 @@ int GameMap::getWidth() const {
 
 int GameMap::getHeight() const {
     return height;
+    
 }
