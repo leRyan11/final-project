@@ -1,19 +1,24 @@
-#ifndef CLIPPER_CARD_H
-#define CLIPPER_CARD_H
+#include "ClipperCard.h"
 
-class ClipperCard {
-private:
-    int x;
-    int y;
+ClipperCard::ClipperCard() {
+    x = 1;
+    y = 0;
+}
 
-public:
-    ClipperCard();
-    ClipperCard(int startX, int startY);
+ClipperCard::ClipperCard(int startX, int startY) {
+    x = startX;
+    y = startY;
+}
 
-    int getX() const;
-    int getY() const;
+int ClipperCard::getX() const {
+    return x;
+}
 
-    void setPosition(int newX, int newY);
-};
+int ClipperCard::getY() const {
+    return y;
+}
 
-#endif
+void ClipperCard::setPosition(int newX, int newY) {
+    x = newX;
+    y = newY;
+}

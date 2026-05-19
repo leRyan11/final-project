@@ -7,21 +7,19 @@ int main() {
     BartSnakeGame game;
     game.startGame();
 
-    cout << "Bart Snake initial feature demo\n";
-    cout << "Use W/A/S/D to move once, or Q to quit.\n\n";
-    game.render();
+    cout << "Bart Snake" << endl;
+    cout << "Use w/a/s/d to move, r to render, q to quit." << endl;
 
     char input;
-    cout << "\nChoice: ";
-    cin >> input;
-
-    game.processInput(input);
-    if (game.isRunning()) {
-        game.update();
+    while (game.isRunning() && cin >> input) {
+        if (input == 'r') {
+            game.render();
+        } else {
+            game.processInput(input);
+            game.update();
+            game.render();
+        }
     }
-
-    cout << "\nAfter update:\n";
-    game.render();
 
     return 0;
 }

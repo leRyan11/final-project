@@ -1,21 +1,25 @@
-#ifndef GAME_MAP_H
-#define GAME_MAP_H
+#include "GameMap.h"
 
-#include <string>
+GameMap::GameMap() {
+    stationName = "Embarcadero";
+    width = 10;
+    height = 10;
+}
 
-class GameMap {
-private:
-    std::string stationName;
-    int width;
-    int height;
+GameMap::GameMap(const std::string& name, int mapWidth, int mapHeight) {
+    stationName = name;
+    width = mapWidth;
+    height = mapHeight;
+}
 
-public:
-    GameMap();
-    GameMap(const std::string& name, int mapWidth, int mapHeight);
+std::string GameMap::getStationName() const {
+    return stationName;
+}
 
-    std::string getStationName() const;
-    int getWidth() const;
-    int getHeight() const;
-};
+int GameMap::getWidth() const {
+    return width;
+}
 
-#endif
+int GameMap::getHeight() const {
+    return height;
+}
