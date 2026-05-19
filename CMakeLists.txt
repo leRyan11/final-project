@@ -16,3 +16,16 @@ target_link_libraries(bart_snake bart_snake_core)
 add_executable(tests tests/test_main.cpp)
 target_link_libraries(tests bart_snake_core)
 add_test(NAME BartSnakeTests COMMAND tests)
+add_library(bart_snake_core
+    src/BartSnake.cpp
+    src/ClipperCard.cpp
+    src/GameMap.cpp
+    src/BartSnakeGame.cpp
+)
+
+add_executable(tests tests/test_main.cpp)
+target_link_libraries(tests bart_snake_core)
+
+add_test(NAME CollectCardNormal COMMAND tests normal)
+add_test(NAME CollectCardNoMatch COMMAND tests no_match)
+add_test(NAME CollectCardBoundary COMMAND tests boundary)
